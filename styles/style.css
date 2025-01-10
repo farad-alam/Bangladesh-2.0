@@ -177,20 +177,108 @@ nav h1 {
   background-color: #668c4d;
 }
 
-
 /* VISION OF FUTURE END  ------------------------>>>>>>>>>>> */
 /* YUNUS QOUTES  ------------------------>>>>>>>>>>> */
-#yunus-qoute{
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid rgb(219, 219, 219);
-    background-image: url("/assets/quote-bg.png");
-    background-repeat: no-repeat;
-    background-position: 2% 4%;
+#yunus-qoute {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(219, 219, 219);
+  background-image: url("/assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: 2% 4%;
 }
-.designation{
-    font-size: 12px;
-    color: gray;
+.designation {
+  font-size: 12px;
+  color: gray;
 }
 /* YUNUS QOUTES END  ------------------------>>>>>>>>>>> */
+/* RECENT NEWS  ------------------------>>>>>>>>>>> */
+.all-news {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.news {
+  background-color: white;
+  padding: 29px 28px 29px 0px;
+  border-radius: 24px;
+  display: flex;
+  /* gap: 5px; */
+}
+.news:nth-child(2) .news-thumbnail {
+  order: 2;
+}
+.news-thumbnail {
+  flex-basis: 38%;
+  text-align: end;
+}
+.news-thumbnail img {
+  width: 370px;
+  border-radius: 29px;
+}
+.news-text {
+  flex-basis: 60%;
+  padding-left: 25px;
+}
+.news-title {
+  font-size: 28px;
+  color: var(--sub-heading-text-color);
+  margin: 0;
+  margin-bottom: 8px;
+}
+.media-details {
+  margin-bottom: 6px;
+}
+.time-stamp {
+  color: var(--para-text-color);
+}
+.date {
+  margin-right: 4px;
+}
+.news-desc {
+  margin-bottom: 25px;
+}
+/* RECENT NEWS END ------------------------>>>>>>>>>>> */
+/* Donate Now ------------------------>>>>>>>>>>> */
+#donation {
+  text-align: center;
+  padding: 10px 35px;
+}
+.pay-donation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.amaounts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.ama-tk {
+  border: 1px solid rgb(207, 205, 205);
+  padding: 25px;
+  font-size: 35px;
+  font-weight: 500;
+  border-radius: 9px;
+  background-color: white;
+}
+.ama-tk:nth-child(2){
+    background-color: var(--banar-bg-color);
+}
+.other-amaounts {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-bottom: 25px;
+}
+.other-amaounts input{
+    width: 80%;
+    text-align: center;
+    padding: 18px;
+    border: none;
+    border-radius: 9px;
+    outline-color: var(--primary-btn-color);
+    
+}
+/* Donate Now End ------------------------>>>>>>>>>>> */
