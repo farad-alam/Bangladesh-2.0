@@ -193,6 +193,42 @@ nav h1 {
   color: gray;
 }
 /* YUNUS QOUTES END  ------------------------>>>>>>>>>>> */
+/* Opinions  ------------------------>>>>>>>>>>> */
+#opinions {
+  width: 100%;
+}
+.tables {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(214, 214, 214);
+}
+thead {
+  background-color: var(--banar-bg-color);
+}
+th {
+  padding: 20px;
+  text-align: start;
+  border: 1px solid rgb(214, 214, 214);
+}
+td {
+  padding: 20px 10px;
+  border: 1px solid rgb(214, 214, 214);
+  font-weight: 500;
+}
+select {
+  background-color: var(--banar-bg-color);
+  padding: 9px 20px;
+  border-radius: 6px;
+}
+
+/* Opinions End  ------------------------>>>>>>>>>>> */
+
 /* RECENT NEWS  ------------------------>>>>>>>>>>> */
 .all-news {
   display: flex;
@@ -293,8 +329,8 @@ nav h1 {
   width: 60%;
   margin: 0 auto;
 }
-.subscriber-input{
-    width: 100%;
+.subscriber-input {
+  width: 100%;
 }
 .subscriber-input input {
   /* width: 100%; */
@@ -302,40 +338,39 @@ nav h1 {
   padding: 20px; */
   border: none;
   outline: none;
-  
 }
-.email-input{
-    padding: 15px 20px;
-    width: 70%;
-    border-radius: 9px 0 0 9px;
+.email-input {
+  padding: 15px 20px;
+  width: 70%;
+  border-radius: 9px 0 0 9px;
 }
-.email-sub{
-    padding: 15px 20px;
-    width: 20%;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: var(--primary-btn-color);
-    margin: -4px;
-    border-radius: 0 9px 9px 0;
+.email-sub {
+  padding: 15px 20px;
+  width: 20%;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--primary-btn-color);
+  margin: -4px;
+  border-radius: 0 9px 9px 0;
 }
 /* News Letter End ------------------------>>>>>>>>>>> */
 /* Footer ------------------------>>>>>>>>>>> */
-footer{
-    text-align: center;
-    background-color: white;
-    padding: 32px 0 25px;
+footer {
+  text-align: center;
+  background-color: white;
+  padding: 32px 0 25px;
 }
-footer h2{
-    font-size: 28px;
+footer h2 {
+  font-size: 28px;
 }
-.socials{
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    border-top: 1px solid rgb(223, 218, 218);
+.socials {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  border-top: 1px solid rgb(223, 218, 218);
 }
 /* Footer end ------------------------>>>>>>>>>>> */
