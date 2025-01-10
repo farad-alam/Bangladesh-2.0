@@ -10,30 +10,85 @@
 }
 
 /* SHARED CSS ------------------------>>>>>>>>>>> */
-.body-bg-color{
-    background-color: var(--body-bg-color);
+.body-bg-color {
+  background-color: var(--body-bg-color);
 }
 .fira-sans-regular {
   font-family: "Fira Sans", serif;
   font-weight: 400;
   font-style: normal;
 }
-.container{
-    padding: 0px 160px;
+.container {
+  padding: 0px 130px;
+}
+.heading {
+  color: var(--heading-text-color);
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0;
+  /* padding: 0; */
+}
+.btn{
+    background-color: var(--primary-btn-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
 }
 /* SHARED CSS END ------------------------>>>>>>>>>>> */
 
 /* HEADER SECTION ------------------------>>>>>>>>>>> */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.singin-btn button{
-    background: transparent;
-    border: 1px solid #079b76;
-    color: var(--primary-btn-color);
-    border-radius: 7px;
-    padding: 5px 14px;
+nav h1{
+    font-size: 32px;
+}
+.singin-btn button {
+  background: transparent;
+  border: 1px solid #079b76;
+  color: var(--primary-btn-color);
+  border-radius: 7px;
+  padding: 9px 14px;
+  font-size: 15px;
+  font-weight: 600;
 }
 /* HEADER SECTION END ------------------------>>>>>>>>>>> */
+
+/* BANAR SECTION START ------------------------>>>>>>>>>>> */
+.banar {
+  /* height: 560px; */
+  border-radius: 18px;
+  padding: 70px 30px 80px 60px;
+  background-color: var(--banar-bg-color);
+}
+.banar-context {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+  justify-content: space-between;
+  align-items: center;
+}
+.banar-details h3{
+    color: var(--para-text-color);
+}
+.banar-details button{
+    margin-top: 20px;
+}
+.banar-details:nth-child(1) {
+  flex-basis: 60%;
+  /* width: 320px; */
+  
+}
+.banar-details:nth-child(2) {
+  flex-basis: 40%;
+}
+.banar-details img{
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+/* BANAR SECTION END  ------------------------>>>>>>>>>>> */
