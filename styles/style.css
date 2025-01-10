@@ -8,3 +8,32 @@
   --sub-heading-text-color: rgba(14, 14, 14, 0.801);
   --para-text-color: rgba(14, 14, 14, 0.685);
 }
+
+/* SHARED CSS ------------------------>>>>>>>>>>> */
+.body-bg-color{
+    background-color: var(--body-bg-color);
+}
+.fira-sans-regular {
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container{
+    padding: 0px 160px;
+}
+/* SHARED CSS END ------------------------>>>>>>>>>>> */
+
+/* HEADER SECTION ------------------------>>>>>>>>>>> */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.singin-btn button{
+    background: transparent;
+    border: 1px solid #079b76;
+    color: var(--primary-btn-color);
+    border-radius: 7px;
+    padding: 5px 14px;
+}
+/* HEADER SECTION END ------------------------>>>>>>>>>>> */
