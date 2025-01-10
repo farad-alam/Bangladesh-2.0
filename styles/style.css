@@ -21,6 +21,9 @@
 .container {
   padding: 0px 130px;
 }
+main section{
+    margin-top: 70px;
+}
 .heading {
   color: var(--heading-text-color);
   font-size: 56px;
@@ -28,12 +31,26 @@
   margin: 0;
   /* padding: 0; */
 }
-.btn{
-    background-color: var(--primary-btn-color);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 7px;
+.sub-headings{
+    color: var(--sub-heading-text-color);
+    /* margin: 9px; */
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.btn {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn-primary{
+      background-color: var(--primary-btn-color);
+}
+.section-title{
+    font-size: 34px;
+    font-weight: 700;
 }
 /* SHARED CSS END ------------------------>>>>>>>>>>> */
 
@@ -43,8 +60,8 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav h1{
-    font-size: 32px;
+nav h1 {
+  font-size: 32px;
 }
 .singin-btn button {
   background: transparent;
@@ -54,6 +71,7 @@ nav h1{
   padding: 9px 14px;
   font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 /* HEADER SECTION END ------------------------>>>>>>>>>>> */
 
@@ -71,24 +89,48 @@ nav h1{
   justify-content: space-between;
   align-items: center;
 }
-.banar-details h3{
-    color: var(--para-text-color);
+.banar-details h3 {
+  color: var(--para-text-color);
 }
-.banar-details button{
-    margin-top: 20px;
+.banar-details button {
+  margin-top: 20px;
 }
 .banar-details:nth-child(1) {
   flex-basis: 60%;
   /* width: 320px; */
-  
 }
 .banar-details:nth-child(2) {
   flex-basis: 40%;
 }
-.banar-details img{
-    width: 350px;
-    margin: 0;
-    padding: 0;
-    align-items: flex-end;
+.banar-details img {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
 }
 /* BANAR SECTION END  ------------------------>>>>>>>>>>> */
+/* PILLARS OG BD START  ------------------------>>>>>>>>>>> */
+#pillars-of-bd {
+  /* background-color: #079b76; */
+}
+.all-pillar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.pillar {
+  flex-basis: 20%;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid rgb(236, 232, 232);
+  padding: 14px;
+
+}
+.pillar img{
+    width: 50px;
+}
+.pillar-desc{
+    color: var(--para-text-color);
+    font-size: 15px;
+}
+/* PILLARS OG BD END  ------------------------>>>>>>>>>>> */
