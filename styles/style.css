@@ -54,6 +54,10 @@ main section {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn:hover{
+    transform: scale(1.07);
 }
 .btn-primary {
   background-color: var(--primary-btn-color);
@@ -62,6 +66,7 @@ main section {
 .box-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 /* SHARED CSS END ------------------------>>>>>>>>>>> */
 
 /* HEADER SECTION ------------------------>>>>>>>>>>> */
@@ -141,6 +146,7 @@ nav h1 {
 .pillar-desc {
   color: var(--para-text-color);
   font-size: 15px;
+  text-align:justify;
 }
 /* PILLARS OG BD END  ------------------------>>>>>>>>>>> */
 
