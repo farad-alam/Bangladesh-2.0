@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --body-bg-color: #f5f5f5;
+    --brand-name-color: #953256;
+  --body-bg-color: #F9DBBD ;
+  --banar-bg-color: #FFA5AB;
+  --primary-btn-color: #A53860;
+  --heading-text-color: #450920;
+  --sub-heading-text-color: #450920b2;;
+  --para-text-color: #450920c7;;
+  --hover-color: #FFA5AB;
+  /* --body-bg-color: #f5f5f5;
   --banar-bg-color: #c6e4d6;
   --primary-btn-color: #006a50;
   --heading-text-color: #0e0e0e;
   --sub-heading-text-color: rgba(14, 14, 14, 0.801);
   --para-text-color: rgba(14, 14, 14, 0.685);
+  --hover-color: #e7eed0; */
 }
 
 /* SHARED CSS ------------------------>>>>>>>>>>> */
@@ -39,6 +48,7 @@ main section {
   font-size: 20px;
 }
 .section-title {
+    color: var(--heading-text-color);
   font-size: 34px;
   font-weight: 700;
 }
@@ -56,8 +66,8 @@ main section {
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.btn:hover{
-    transform: scale(1.07);
+.btn:hover {
+  transform: scale(1.07);
 }
 .btn-primary {
   background-color: var(--primary-btn-color);
@@ -77,10 +87,11 @@ nav {
 }
 nav h1 {
   font-size: 32px;
+  color: var(--brand-name-color);
 }
 .singin-btn button {
   background: transparent;
-  border: 1px solid #079b76;
+  border: 1px solid var(--heading-text-color);
   color: var(--primary-btn-color);
   border-radius: 7px;
   padding: 9px 14px;
@@ -139,6 +150,12 @@ nav h1 {
   border-radius: 12px;
   border: 1px solid rgb(236, 232, 232);
   padding: 14px;
+  transition: all 0.4s ease;
+}
+.pillar:hover {
+  transform: scale(1.06);
+  color: white;
+  background-color: var(--hover-color);
 }
 .pillar img {
   width: 50px;
@@ -146,7 +163,7 @@ nav h1 {
 .pillar-desc {
   color: var(--para-text-color);
   font-size: 15px;
-  text-align:justify;
+  text-align: justify;
 }
 /* PILLARS OG BD END  ------------------------>>>>>>>>>>> */
 
@@ -207,6 +224,7 @@ nav h1 {
   background-color: white;
   padding: 30px;
   border-radius: 12px;
+  color: var(--para-text-color);
 }
 table {
   width: 100%;
@@ -292,6 +310,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: var(--primary-btn-color);
 }
 .amaounts {
   display: flex;
@@ -320,6 +339,7 @@ select {
   padding: 18px;
   border: none;
   border-radius: 9px;
+  color: var(--primary-btn-color);;
   outline-color: var(--primary-btn-color);
 }
 /* Donate Now End ------------------------>>>>>>>>>>> */
@@ -364,11 +384,12 @@ select {
 /* Footer ------------------------>>>>>>>>>>> */
 footer {
   text-align: center;
-  background-color: white;
+  background-color: var(--banar-bg-color);
   padding: 32px 0 25px;
 }
 footer h2 {
   font-size: 28px;
+  color: var(--brand-name-color);
 }
 .socials {
   width: 60%;
