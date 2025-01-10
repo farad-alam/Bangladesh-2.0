@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --brand-name-color: #953256;
-  --body-bg-color: #F9DBBD ;
-  --banar-bg-color: #FFA5AB;
-  --primary-btn-color: #A53860;
+  --brand-name-color: #953256;
+  --body-bg-color: #f9dbbd;
+  --banar-bg-color: #ffa5ab;
+  --primary-btn-color: #a53860;
   --heading-text-color: #450920;
-  --sub-heading-text-color: #450920b2;;
-  --para-text-color: #450920c7;;
-  --hover-color: #FFA5AB;
+  --sub-heading-text-color: #450920b2;
+  --para-text-color: #450920c7;
+  --hover-color: #ffa5ab;
   /* --body-bg-color: #f5f5f5;
   --banar-bg-color: #c6e4d6;
   --primary-btn-color: #006a50;
@@ -48,7 +48,7 @@ main section {
   font-size: 20px;
 }
 .section-title {
-    color: var(--heading-text-color);
+  color: var(--heading-text-color);
   font-size: 34px;
   font-weight: 700;
 }
@@ -135,7 +135,7 @@ nav h1 {
   align-items: flex-end;
 }
 /* BANAR SECTION END  ------------------------>>>>>>>>>>> */
-/* PILLARS OG BD START  ------------------------>>>>>>>>>>> */
+/* PILLARS Of BD START  ------------------------>>>>>>>>>>> */
 #pillars-of-bd {
   /* background-color: #079b76; */
 }
@@ -155,7 +155,8 @@ nav h1 {
 .pillar:hover {
   transform: scale(1.06);
   color: white;
-  background-color: var(--hover-color);
+  /* background-color: var(--hover-color); */
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
 .pillar img {
   width: 50px;
@@ -179,25 +180,58 @@ nav h1 {
   flex-basis: 28%;
   border-radius: 12px;
   padding: 22px;
-  background-color: rgb(253, 177, 76);
+  /* background-color: rgb(253, 177, 76); */
+  transition: all 0.3s ease;
+}
+
+
+
+.vision:hover {
+  transform: rotate(10deg);
+  box-shadow: 0px 10px 13px -7px #000000, 6px 14px 11px 4px rgba(97, 0, 8, 0.32);
 }
 .vision:nth-child(1) {
   background-color: #a7dbd869;
+  background-color: #00dbde;
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
 }
 .vision:nth-child(1) .v-btn {
   background-color: #55c3da;
+  background-color: #00dbde;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .vision:nth-child(2) {
   background-color: #c048486e;
+  background-color: #85ffbd;
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
 }
 .vision:nth-child(2) .v-btn {
   background-color: #f07241;
+  background-color: #85ffbd;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .vision:nth-child(3) {
   background-color: #ccd91a5e;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 .vision:nth-child(3) .v-btn {
   background-color: #668c4d;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 /* VISION OF FUTURE END  ------------------------>>>>>>>>>>> */
@@ -210,6 +244,10 @@ nav h1 {
   background-image: url("/assets/quote-bg.png");
   background-repeat: no-repeat;
   background-position: 2% 4%;
+  transition: all 0.4s ease;
+}
+#yunus-qoute:hover {
+  transform: scaleX(1.03);
 }
 .designation {
   font-size: 12px;
@@ -266,6 +304,11 @@ select {
   border-radius: 24px;
   display: flex;
   /* gap: 5px; */
+  transition: 0.7s ease;
+}
+.news:hover {
+    transform: scale(1.02);
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
 }
 .news:nth-child(2) .news-thumbnail {
   order: 2;
@@ -324,9 +367,28 @@ select {
   font-weight: 500;
   border-radius: 9px;
   background-color: white;
+  transition: all 0.5s ease;
+}
+.ama-tk:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 9px 20px 4px rgba(165, 56, 96, 0.82);
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
 }
 .ama-tk:nth-child(2) {
   background-color: var(--banar-bg-color);
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
 }
 .other-amaounts {
   flex-grow: 1;
@@ -339,8 +401,12 @@ select {
   padding: 18px;
   border: none;
   border-radius: 9px;
-  color: var(--primary-btn-color);;
+  color: var(--primary-btn-color);
   outline-color: var(--primary-btn-color);
+  transition: all 0.3s ease;
+}
+.other-amaounts input:focus {
+  transform: scale(1.1);
 }
 /* Donate Now End ------------------------>>>>>>>>>>> */
 /* News Letter ------------------------>>>>>>>>>>> */
@@ -350,6 +416,12 @@ select {
   padding: 60px 20px;
   border-radius: 30px;
   margin-bottom: 80px;
+  transform: rotateX(60deg) rotateY(10deg);
+  box-shadow: 2px 9px 20px 4px rgba(235,0,90,0.82);
+  transition: transform 1s ease;
+}
+#news-letter:hover{
+    transform: none;
 }
 .nwl-context {
   width: 60%;
