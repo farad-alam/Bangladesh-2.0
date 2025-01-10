@@ -21,8 +21,8 @@
 .container {
   padding: 0px 130px;
 }
-main section{
-    margin-top: 70px;
+main section {
+  margin-top: 70px;
 }
 .heading {
   color: var(--heading-text-color);
@@ -31,12 +31,22 @@ main section{
   margin: 0;
   /* padding: 0; */
 }
-.sub-headings{
-    color: var(--sub-heading-text-color);
-    /* margin: 9px; */
-    margin-top: 12px;
-    margin-bottom: 10px;
-    font-size: 20px;
+.sub-headings {
+  color: var(--sub-heading-text-color);
+  /* margin: 9px; */
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+}
+.text-gray-400 {
+  color: var(--para-text-color);
+}
+.t-15 {
+  font-size: 15px;
 }
 .btn {
   color: white;
@@ -45,12 +55,12 @@ main section{
   border-radius: 7px;
   cursor: pointer;
 }
-.btn-primary{
-      background-color: var(--primary-btn-color);
+.btn-primary {
+  background-color: var(--primary-btn-color);
 }
-.section-title{
-    font-size: 34px;
-    font-weight: 700;
+
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* SHARED CSS END ------------------------>>>>>>>>>>> */
 
@@ -124,13 +134,48 @@ nav h1 {
   border-radius: 12px;
   border: 1px solid rgb(236, 232, 232);
   padding: 14px;
-
 }
-.pillar img{
-    width: 50px;
+.pillar img {
+  width: 50px;
 }
-.pillar-desc{
-    color: var(--para-text-color);
-    font-size: 15px;
+.pillar-desc {
+  color: var(--para-text-color);
+  font-size: 15px;
 }
 /* PILLARS OG BD END  ------------------------>>>>>>>>>>> */
+
+/* VISION OF FUTURE  ------------------------>>>>>>>>>>> */
+.visions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.vision {
+  flex-basis: 28%;
+  border-radius: 12px;
+  padding: 22px;
+  background-color: rgb(253, 177, 76);
+}
+.vision:nth-child(1) {
+  background-color: #a7dbd869;
+}
+.vision:nth-child(1) .v-btn {
+  background-color: #55c3da;
+}
+.vision:nth-child(2) {
+  background-color: #c048486e;
+}
+.vision:nth-child(2) .v-btn {
+  background-color: #f07241;
+}
+.vision:nth-child(3) {
+  background-color: #ccd91a5e;
+}
+.vision:nth-child(3) .v-btn {
+  background-color: #668c4d;
+}
+
+
+/* VISION OF FUTURE END  ------------------------>>>>>>>>>>> */
