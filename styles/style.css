@@ -88,12 +88,16 @@ main section {
 /* SHARED CSS END ------------------------>>>>>>>>>>> */
 
 /* HEADER SECTION ------------------------>>>>>>>>>>> */
+header {
+  /* background-color: #079b76; */
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 10px 0;
+  /* background-color: #00dbde; */
 }
 nav h1 {
   font-size: 32px;
@@ -200,7 +204,7 @@ nav h1 {
   margin-top: 20px;
 }
 .vision {
-  flex-basis: 28%;
+  /* flex-basis: 28%; */
   flex-grow: 1;
   border-radius: 12px;
   padding: 22px;
@@ -511,8 +515,138 @@ footer h2 {
 }
 /* Footer end ------------------------>>>>>>>>>>> */
 
-@media screen and (max-width: 750px) {
+/* RESPONSIVNESS FOR MOBILE DEVICES */
+@media screen and (max-width: 450px) {
   .container {
-    padding: 0px 30px;
+    padding: 0px 5%;
   }
+  .section-title {
+    font-size: 24px;
+  }
+  .sub-headings {
+    font-size: 17px;
+  }
+
+  /* Header ------------->>>>>>>>>> */
+  nav h1 {
+    font-size: 24px;
+  }
+  .singin-btn button {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  /* Header ------------->>>>>>>>>> */
+
+  /* BANAR SECTION START ------------------------>>>>>>>>>>> */
+
+  .banar {
+    /* display: none; */
+    padding: 20px;
+  }
+  .banar-context {
+    flex-direction: column;
+    gap: 4%;
+  }
+  .banar-details {
+    flex-basis: 45%;
+  }
+  .banar-details h1 {
+    font-size: 150%;
+  }
+  .banar-details img {
+    width: 90%;
+    text-align: end;
+    padding-left: 10px;
+  }
+  .banar-details:nth-child(1) {
+    order: 2;
+    /* background-color: #00dbde; */
+  }
+  /* BANAR SECTION End ------------------------>>>>>>>>>>> */
+
+  /* PILLARS Of BD START  ------------------------>>>>>>>>>>> */
+  .all-pillar {
+    flex-direction: column;
+  }
+
+  /* PILLARS Of BD End  ------------------------>>>>>>>>>>> */
+
+  /* VISION OF FUTURE  ------------------------>>>>>>>>>>> */
+  .visions {
+    flex-direction: column;
+  }
+  /* VISION OF FUTURE End ------------------------>>>>>>>>>>> */
+
+  /* RECENT NEWS  ------------------------>>>>>>>>>>> */
+  .news {
+    padding: 0px;
+    /* padding: 29px 28px 29px 0px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .news-thumbnail {
+    padding: 10px;
+    /* background-color: #00dbde; */
+  }
+  .news-thumbnail img {
+    width: 100%;
+  }
+  .news-text {
+    padding: 15px;
+  }
+  .news-title{
+    font-size: 19px;
+  }
+
+  /* RECENT NEWS End ------------------------>>>>>>>>>>> */
+
+  /* Donate Now ------------------------>>>>>>>>>>> */
+  #donation p {
+    text-align: start;
+  }
+  .amaounts {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .ama-tk {
+    flex-basis: 13%;
+    font-size: 20px;
+    padding: 18px;
+    flex-grow: 0;
+  }
+  .other-amaounts input {
+    width: 60%;
+  }
+  /* Donate Now End ------------------------>>>>>>>>>>> */
+
+  /* News Letter ------------------------>>>>>>>>>>> */
+
+  #news-letter {
+    padding: 10px 0px;
+    margin-bottom: 80px;
+  }
+  .nwl-context {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .nwl-context h2 {
+    font-size: 20px;
+  }
+  .email-input {
+    width: 40%;
+    padding: 13px 20px;
+    border: none;
+  }
+  .email-sub {
+    width: 30%;
+    padding: 15px 20px 15px 10px;
+    font-size: 11px;
+  }
+  /* News Letter End ------------------------>>>>>>>>>>> */
+
+  /* FOOTER ---------------------->>>>>> */
+
+  /* FOOTER eND---------------------->>>>>> */
 }
