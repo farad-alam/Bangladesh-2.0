@@ -204,7 +204,7 @@ nav h1 {
   margin-top: 20px;
 }
 .vision {
-  /* flex-basis: 28%; */
+  flex-basis: 28%;
   flex-grow: 1;
   border-radius: 12px;
   padding: 22px;
